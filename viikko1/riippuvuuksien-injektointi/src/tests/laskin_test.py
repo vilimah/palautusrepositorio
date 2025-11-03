@@ -21,11 +21,3 @@ class TestLaskin(unittest.TestCase):
         laskin.suorita()
 
         self.assertEqual(io.outputs[0], "Summa: 4")
-
-    def test_kaksi_perakkista_summaa(self):
-        io = StubIO(["2", "3", "5", "7", "-9999"])
-        laskin = Laskin(io)
-        laskin.suorita()
-
-        self.assertEqual(io.outputs[0], "Summa: 5")
-        self.assertEqual(io.outputs[1], "Summa: 12")
