@@ -1,4 +1,5 @@
 class Kirjanpito:
+    """Luokka kirjanpidon tapahtumien tallentamiseen."""
     def __init__(self):
         self.tapahtumat = []
 
